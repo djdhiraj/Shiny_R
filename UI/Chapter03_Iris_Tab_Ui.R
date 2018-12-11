@@ -19,7 +19,8 @@ shinyUI(fluidPage(
         tabPanel("Summary",verbatimTextOutput("summary")),
          tabPanel("Data set",verbatimTextOutput("data_set")),
          tabPanel("Table",tableOutput("table")),  
-    tabPanel("Plot",plotOutput("myhist"))     
+          tabPanel("Plot",plotOutput("myhist"))     
+          tabPanel("Mean",verbatimTextOutput("mean"))
                      
        )
       )
