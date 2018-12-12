@@ -12,6 +12,14 @@ shinyServer(function(input,output){
     read.table(file=file1$datapath, sep=input$sep, header = input$header, stringsAsFactors = input$stringAsFactors)
     
   })
+  # library(shiny)
+# shinyServer(
+# function(input,output){
+#   output$text<-renderTable({
+#     infile<-input$file
+#     if(is.null(infile)){return()}
+#       read.csv(infile$datapath)
+#   }
   
   # this reactive output contains the summary of the dataset and display the summary in table format
   output$filedf <- renderTable({
